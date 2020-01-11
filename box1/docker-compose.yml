@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  web:
+    container_name: box1-nginx
+    image: anamus/hack-labs:box1-nginx-0.3
+    ports:
+      - 1121:80
+
+  app:
+    container_name: box1-app
+    image: anamus/hack-labs:box1-app-0.1
+
+  database:
+    image: mysql:5.7
+    ports:
+      - 33061:3306
+    container_name: box1-database
+    environment:
+      - "MYSQL_USER=almostroot"
+      - "MYSQL_PASSWORD=password123"
+      - "MYSQL_DATABASE=vulnerable_app"
+      - "MYSQL_ROOT_PASSWORD=password123"
