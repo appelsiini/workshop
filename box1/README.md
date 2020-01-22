@@ -4,7 +4,7 @@ This application contains certain PHP & web application related vulnerabilities 
 **This application contains critical security vulnerabilities, DO NOT deploy or run this application outside of your localhost (or expose your localhost while running this)**
 
 # Running
-1. `docker-compose up -d`
+1. `docker-compose up -d && docker exec box1-app php artisan migrate --seed`
 2. The application is accessible at http://localhost:1121
 
 # Shutting Down & Cleaning Up
@@ -17,7 +17,9 @@ This application contains certain PHP & web application related vulnerabilities 
 
 ## Object Injection (via PHAR Deserialization)
 * The recommended tool used for gadget chain payload generation is PHPGGC (https://github.com/ambionics/phpggc)
-* Related API endpoints can be found at /api/uploads & /api/file-details?fileName=xxx
+* Related API endpoints can be found at `/api/uploads` & `/api/file-details?fileName=xxx`
+  * Here's an example of the file upload via HTTPie (https://httpie.org/)
+    * `http -f POST http://localhost:1121/api/uploads file@pwn.jpg`
 * Protip: try `Guzzle/RCE1` gadget chain
 
 ## Escalating Privileges
