@@ -15,6 +15,10 @@ This application contains certain PHP & web application related vulnerabilities 
 * There's a vulnerable API endpoint at `/api/events?sort=id`
 * There are many ways & tools to exploit this with, try sqlmap for example.
 
+## Dictionary Password Attack
+* After a successful SQLi attack you'll be able to obtain the user's password hash from the DB
+* Find a list of top previously breached passwords from dark web and crack the hash open (john/hashcat maybe?)
+
 ## Object Injection (via PHAR Deserialization)
 * The recommended tool used for gadget chain payload generation is PHPGGC (https://github.com/ambionics/phpggc)
 * Related API endpoints can be found at `/api/uploads` & `/api/file-details?fileName=xxx`
