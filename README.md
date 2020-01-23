@@ -1,7 +1,11 @@
 # Web Security Workshop Resources
-
 This repository contains a suite of vulnerable applications for ethical hacking and penetration testing training purposes.  
-Each folder contains a single application with multiple exploitable vulnerabilities to practise with in a controller local lab environment.  
+Each folder contains a single application with multiple exploitable vulnerabilities to practise with in a controller local lab environment.
+
+**These applications contain critical security vulnerabilities, DO NOT deploy or run these applications outside of your localhost (or expose your localhost while running these)**
+
+## Contents
+There are currently 17 exploitable vulnerabilities included within this project, on top of which DVWA offers 3 different difficulty levels for its 13 vulnerabilities.  
 
 ## Requirements
 * Docker
