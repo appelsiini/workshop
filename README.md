@@ -1,6 +1,6 @@
 # Web Security Workshop Resources
 This repository contains a suite of vulnerable applications for ethical hacking and penetration testing training purposes.  
-Each folder contains a single application with multiple exploitable vulnerabilities to practise with in a controller local lab environment.
+Each folder contains a single application with multiple exploitable vulnerabilities to practice with in a controlled local lab environment.
 
 **These applications contain critical security vulnerabilities, DO NOT deploy or run these applications outside of your localhost (or expose your localhost while running these)**
 
@@ -13,4 +13,4 @@ There are currently 17 exploitable vulnerabilities included within this project,
 * ~10GB of free disk space
 
 ## Recommendations
-Majority of the recommended tools for these exercises are already included in a penetration testing focused Linux distribution called Kali Linux, and therefor using Kali minimises the amount of new tools required to complete these exercises successfully.  
+Majority of the recommended tools for these exercises are already included in a penetration testing focused Linux distribution called Kali Linux. Therefore using Kali minimises the amount of new tools required to complete these exercises successfully.
